@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "actividad5-iac-bucket-Cambio-de-nombre"
+  bucket = "actividad5-iac-bucket-cambio-de-nombre"
 }
 
 

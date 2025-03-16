@@ -4,9 +4,12 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "Actividad5-IaC-bucket"
-  tags = {
-    Name        = "DemoBucket"
-    Environment = "Dev"
-  }
+  bucket = "actividad5-iac-bucket-${random_string.suffix.result}"  
 }
+
+resource "random_string" "suffix" {
+  length  = 6
+  special = false
+  upper   = false
+}
+

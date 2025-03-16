@@ -3,11 +3,6 @@ provider "aws" {
   region = "us-east-1"  
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "actividad5-iac-bucket-cambio-de-nombre"
-}
-
-
 
 //resource "aws_s3_bucket" "example" {
 //  bucket = "actividad5-iac-bucket-${random_string.suffix.result}"  
